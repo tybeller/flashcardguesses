@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.button-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.mover {
+  margin: 0.3em;
+  width:40%;
+}

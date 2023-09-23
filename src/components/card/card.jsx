@@ -10,10 +10,10 @@ const Card = ({ card }) => {
     <div className="card">
       <div className={`card-inner ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
         <div className="card-front">
-          <h3>{word}</h3>
+          <h1 className='card-title'>{word}</h1>
         </div>
         <div className="card-back">
-          <p>{definition}</p>
+          <p className="card-definition"><b><i>Def: </i></b>{definition}</p>
         </div>
       </div>
     </div>

@@ -13,7 +13,10 @@ const App = () => {
 
       <Card card={{ word: 'Salve', definition: 'Hello' }} />
 
-
+      <span className='button-holder'>
+        <button className='mover'>Previous</button>
+        <button className='mover'>Next</button>
+      </span>
     </div>
   )
 }
