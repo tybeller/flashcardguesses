@@ -1,5 +1,6 @@
 import './App.css';
-import Card from './components/card/card'
+import CardCarousel from './components/card-carousel';
+import latinDictionary from './assets/dict';
 
 const App = () => {
 
@@ -11,12 +12,7 @@ const App = () => {
         <h2>Flashcards: </h2>
       </div>
 
-      <Card card={{ word: 'Salve', definition: 'Hello' }} />
-
-      <span className='button-holder'>
-        <button className='mover'>Previous</button>
-        <button className='mover'>Next</button>
-      </span>
+      <CardCarousel cards={latinDictionary} />
     </div>
   )
 }

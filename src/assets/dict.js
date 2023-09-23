@@ -26,7 +26,7 @@ let latinDictionary = [
     {
         "word": "gravis",
         "definition": "heavy, serious, important, grievous"
-    }
+    },
     {
         "word": "hodiernus",
         "definition": "of today"
