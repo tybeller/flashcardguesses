@@ -18,13 +18,15 @@ const CardCarousel = ({ cards }) => {
 
     return (
         <div className="card-carousel">
-            {cards.map((card, i) => {
-                return (
-                    <div key={i} className={`card-wrapper ${i === currentCard ? '' : 'hidden-card'}`}>
-                        <Card card={card} />
-                    </div>
-                )
-            })}
+            <div className='card-holder'>
+                {cards.map((card, i) => {
+                    return (
+                        <div key={i} className={`card-wrapper ${i === currentCard ? '' : ( i < currentCard ? 'hidden-card-after' : 'hidden-card-before')}`}>
+                            <Card card={card} />
+                        </div>
+                    )
+                })}
+            </div>
             <span className='button-holder'>
                 <button className='mover' onClick={() => handleNextCard(-1)}>Previous</button>
                 <button className='mover' onClick={() => handleNextCard(1)}>Next</button>
