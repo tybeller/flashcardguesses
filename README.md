@@ -2,7 +2,7 @@
 
 Submitted by: **Ty Beller**
 
-This web app: **allows users to guess **
+This web app: **allows users to guess the latin word on a flashcard given the definition and flip through the cards forwards and backwards**
 
 Time spent: **3** hours spent in total
 
@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./codepathproject3.gif' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
