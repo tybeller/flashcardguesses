@@ -25,3 +25,10 @@
     transform: translate(100%, 0) scale(0.5) rotateZ(90deg);
     transition: all 0.5s ease-in-out;
 }
+
+.user-guess {
+    margin: 1em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}

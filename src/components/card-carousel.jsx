@@ -2,8 +2,10 @@ import './card-carousel.css';
 import Card from './card/card';
 import { useState } from 'react';
 
-const CardCarousel = ({ cards }) => {
+const CardCarousel = ({ cards, cardWord }) => {
     const [currentCard, setCurrentCard] = useState(0);
+
+    cardWord(cards[currentCard].word);
 
     const handleNextCard = (val) => {
         if (currentCard + val === cards.length)
@@ -13,8 +15,9 @@ const CardCarousel = ({ cards }) => {
         else{
             setCurrentCard(currentCard + val);
         }
-
+        cardWord(cards[currentCard].word);
     }
+
 
     return (
         <div className="card-carousel">
